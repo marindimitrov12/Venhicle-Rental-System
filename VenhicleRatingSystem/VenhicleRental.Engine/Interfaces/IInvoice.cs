@@ -8,6 +8,6 @@ namespace VenhicleRental.Engine.Interfaces
 {
     public interface IInvoice
     {
-        Task Calculate();
+        void GetTotal();
     }
 }

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "VenhicleRental.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/VenhicleRental.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VenhicleRental.Models.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "VenhicleRental.Models/1.0.0": {
+      "type": "project",
+      "path": "../VenhicleRating.Models/VenhicleRental.Models.csproj",
+      "msbuildProject": "../VenhicleRating.Models/VenhicleRental.Models.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "VenhicleRental.Models >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Owner\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\_Projects\\VenhicleRating\\VenhicleRatingSystem\\VenhicleRating.Models\\VenhicleRental.Models.csproj": {
+              "projectPath": "C:\\_Projects\\VenhicleRating\\VenhicleRatingSystem\\VenhicleRating.Models\\VenhicleRental.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

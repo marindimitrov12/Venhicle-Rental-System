@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "OsdsghIJe64MgJyqd1S7q/5j4KD4tYhVFLj8+Ehtjk+X1cjwLtgaDzEQwzQWsWjIzUvEXI5bv1ECs4BN2K+Wkg==",
+  "dgSpecHash": "nh436lIMy2deTb1MK044JHMUMha1spfMejthiupAACyvcFbGl/LBlS/4FHJ04DAmEVqEHOJbQRJnifhoY1Mrrw==",
   "success": true,
   "projectFilePath": "C:\\_Projects\\VenhicleRating\\VenhicleRatingSystem\\VenhicleRating.ConsoleApp\\VenhicleRental.ConsoleApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Owner\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\Owner\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

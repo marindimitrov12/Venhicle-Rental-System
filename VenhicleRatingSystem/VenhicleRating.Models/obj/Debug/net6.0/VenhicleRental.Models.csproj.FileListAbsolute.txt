@@ -1,0 +1,11 @@
+C:\_Projects\VenhicleRating\VenhicleRatingSystem\VenhicleRating.Models\bin\Debug\net6.0\VenhicleRental.Models.deps.json
+C:\_Projects\VenhicleRating\VenhicleRatingSystem\VenhicleRating.Models\bin\Debug\net6.0\VenhicleRental.Models.dll
+C:\_Projects\VenhicleRating\VenhicleRatingSystem\VenhicleRating.Models\bin\Debug\net6.0\VenhicleRental.Models.pdb
+C:\_Projects\VenhicleRating\VenhicleRatingSystem\VenhicleRating.Models\obj\Debug\net6.0\VenhicleRental.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\_Projects\VenhicleRating\VenhicleRatingSystem\VenhicleRating.Models\obj\Debug\net6.0\VenhicleRental.Models.AssemblyInfoInputs.cache
+C:\_Projects\VenhicleRating\VenhicleRatingSystem\VenhicleRating.Models\obj\Debug\net6.0\VenhicleRental.Models.AssemblyInfo.cs
+C:\_Projects\VenhicleRating\VenhicleRatingSystem\VenhicleRating.Models\obj\Debug\net6.0\VenhicleRental.Models.csproj.CoreCompileInputs.cache
+C:\_Projects\VenhicleRating\VenhicleRatingSystem\VenhicleRating.Models\obj\Debug\net6.0\VenhicleRental.Models.dll
+C:\_Projects\VenhicleRating\VenhicleRatingSystem\VenhicleRating.Models\obj\Debug\net6.0\refint\VenhicleRental.Models.dll
+C:\_Projects\VenhicleRating\VenhicleRatingSystem\VenhicleRating.Models\obj\Debug\net6.0\VenhicleRental.Models.pdb
+C:\_Projects\VenhicleRating\VenhicleRatingSystem\VenhicleRating.Models\obj\Debug\net6.0\ref\VenhicleRental.Models.dll

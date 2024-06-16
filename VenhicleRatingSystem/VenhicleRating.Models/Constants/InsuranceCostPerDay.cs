@@ -8,8 +8,8 @@ namespace VenhicleRental.Models.Constants
 {
     public class InsuranceCostPerDay
     {
-        public const double Car = 0.01;
-        public const double Motor = 0.02;
-        public const double Van = 0.03;
+        public const decimal Car = 0.0001m;
+        public const decimal Motor = 0.0002m;
+        public const decimal Van = 0.0003m;
     }
 }
