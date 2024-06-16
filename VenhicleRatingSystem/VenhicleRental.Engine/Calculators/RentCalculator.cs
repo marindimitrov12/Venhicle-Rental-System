@@ -3,7 +3,7 @@ using VenhicleRental.Models.Constants;
 using VenhicleRental.Models.Enums;
 using VenhicleRental.Models.InputModels;
 
-namespace VenhicleRental.Engine
+namespace VenhicleRental.Engine.Calculators
 {
     public class RentCalculator:IRentCalculator
     {
