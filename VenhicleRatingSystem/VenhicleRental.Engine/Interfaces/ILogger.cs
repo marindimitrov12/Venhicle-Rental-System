@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VenhicleRental.Models.InputModels;
 
 namespace VenhicleRental.Engine.Interfaces
 {
     public interface ILogger
     {
-        Task Log(string message);
+        Task Log(InputModel model,decimal total,decimal incurance,decimal totalRent);
     }
 }

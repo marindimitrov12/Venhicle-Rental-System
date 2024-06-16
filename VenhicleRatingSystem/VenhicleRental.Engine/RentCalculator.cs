@@ -9,6 +9,9 @@ namespace VenhicleRental.Engine
     {
         public decimal Calculate(int totalDays, InputModel model)
         {
+            model.RentPerday= totalDays < 7
+                ? GetDailyCost(model.Type, true)
+                : GetDailyCost(model.Type, false);
             return totalDays < 7
                 ? totalDays * GetDailyCost(model.Type, true)
                 : totalDays * GetDailyCost(model.Type, false);
@@ -16,6 +19,9 @@ namespace VenhicleRental.Engine
 
         public decimal CalculateHalfPrice(int totalDays, int prevDays, InputModel model)
         {
+            model.EarlyDiscountForRent = totalDays + prevDays < 7
+                ? totalDays * (GetDailyCost(model.Type, true) / 2)
+                : totalDays * (GetDailyCost(model.Type, false) / 2);
             return totalDays + prevDays < 7
                 ? totalDays * (GetDailyCost(model.Type, true) / 2)
                 : totalDays * (GetDailyCost(model.Type, false) / 2);

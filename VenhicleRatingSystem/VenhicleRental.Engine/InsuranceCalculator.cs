@@ -11,6 +11,8 @@ namespace VenhicleRental.Engine
         {
             decimal totalInsurance = 0.0m;
             decimal insuranceWithNoDiscount = totalDays * GetInsuranceCostPerDay(model.Type) * model.Value;
+              model.InsurancePerday = GetInsuranceCostPerDay(model.Type) * model.Value;
+            
 
             switch (model.Type)
             {
@@ -24,6 +26,7 @@ namespace VenhicleRental.Engine
                     totalInsurance = CalculateCargoVanInsurance(insuranceWithNoDiscount, model);
                     break;
             }
+            model.EarlyDiscountForInsurance = ((GetInsuranceCostPerDay(model.Type) * model.Value) - model.InsuranceDiscountPerDay) * (model.EndDate - model.CurrentTime).Days;
 
             return totalInsurance;
         }
@@ -44,6 +47,8 @@ namespace VenhicleRental.Engine
             if ((int)model.Safety >= 4)
             {
                 var discount = insuranceWithNoDiscount * InsuranceCostFluctuations.ReduceHighSafetyRatingForCars;
+                model.EarlyDiscountForInsurance= discount;
+                model.InsuranceDiscountPerDay= GetInsuranceCostPerDay(model.Type) * model.Value * InsuranceCostFluctuations.ReduceHighSafetyRatingForCars;
                 return insuranceWithNoDiscount - discount;
             }
             return insuranceWithNoDiscount;
@@ -54,6 +59,7 @@ namespace VenhicleRental.Engine
             if (model.Age < 25)
             {
                 var fee = insuranceWithNoDiscount * InsuranceCostFluctuations.IncreaseMotorRiderUnder25;
+                model.InsuranceAdditionPerDay = GetInsuranceCostPerDay(model.Type) * model.Value* InsuranceCostFluctuations.IncreaseMotorRiderUnder25;
                 return insuranceWithNoDiscount + fee;
             }
             return insuranceWithNoDiscount;
@@ -64,6 +70,8 @@ namespace VenhicleRental.Engine
             if (model.Experiance > 5)
             {
                 var discount = insuranceWithNoDiscount * InsuranceCostFluctuations.ReduceVanDriverHasMoreThan5Years;
+               
+                model.InsuranceDiscountPerDay = GetInsuranceCostPerDay(model.Type) * model.Value * InsuranceCostFluctuations.ReduceVanDriverHasMoreThan5Years;
                 return insuranceWithNoDiscount - discount;
             }
             return insuranceWithNoDiscount;

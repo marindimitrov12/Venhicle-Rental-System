@@ -26,6 +26,10 @@ namespace VenhicleRental.ConsoleApp
                    StartDate = DateTime.Parse("2024-06-03"),
                    EndDate = DateTime.Parse("2024-06-18"),
                    CurrentTime = DateTime.Parse("2024-06-13"),
+                   Brand="Citroen",
+                   Model="Jumper",
+                   CustomerName="John Markson",
+
                }) 
                .BuildServiceProvider();
 

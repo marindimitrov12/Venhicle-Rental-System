@@ -11,6 +11,7 @@ namespace VenhicleRental.Models.Models
         public string Brand { get; set; }
         public string Model { get; set; }
         public decimal Value { get; set; }
+        public string CustomerName { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 

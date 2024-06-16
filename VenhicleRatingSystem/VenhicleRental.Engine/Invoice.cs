@@ -50,7 +50,7 @@ namespace VenhicleRental.Engine
             var totalRent = rentWithoutDiscount + rentWithDiscount;
             var total = totalRent + insurance;
 
-            _logger.Log($"Total: {total} insurance: {insurance} Rent: {totalRent}");
+            _logger.Log(_model,total,insurance, totalRent);
         }
     }
 }
